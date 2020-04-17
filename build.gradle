@@ -10,7 +10,7 @@ publish {
     //要发布的插件的标识
     artifactId = 'CustomePlugin'
     //要发布的插件版本
-    publishVersion = '1.0.0'
+    publishVersion = '1.0.1'
     //描述
     desc = 'a plugin of aop test'
     //对应的网址，如果项目代码放在github上，可以填写github中的项目地址
