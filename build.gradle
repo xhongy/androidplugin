@@ -14,7 +14,7 @@ publish {
     //描述
     desc = 'a plugin of aop test'
     //对应的网址，如果项目代码放在github上，可以填写github中的项目地址
-    website = 'https://github.com/milovetingting/Shell'
+    website = 'https://github.com/xhongy/androidplugin.git'
 }
 
 dependencies {
@@ -25,29 +25,3 @@ dependencies {
     compile 'org.aspectj:aspectjrt:1.9.1'
 
 }
-
-//repositories {
-//    mavenCentral()
-//    jcenter()
-//}
-
-
-uploadArchives { // 这里只是更新到本地，可以上传到自定义的maven仓库
-    repositories {
-        mavenDeployer {
-            pom.groupId = 'com.coco.plugin'
-            pom.artifactId = 'aspect-plugin'
-            pom.version = 1.0
-            repository(url: uri('../repo'))
-        }
-    }
-}
-//apply plugin: 'java-library'
-//
-//dependencies {
-//    implementation fileTree(dir: 'libs', include: ['*.jar'])
-//
-//}
-//
-//sourceCompatibility = "7"
-//targetCompatibility = "7"
